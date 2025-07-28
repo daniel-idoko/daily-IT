@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is the difference between a router and a switch?",
+    "category": "Networking",
+    "answer": "A router connects different networks and directs data between them, while a switch connects devices within the same network and handles data at the local level."
+  },
+  {
+    "question": "Explain what an IP address is and why it matters.",
+    "category": "Networking",
+    "answer": "An IP address uniquely identifies a device on a network, enabling communication between devices."
+  },
+  {
+    "question": "What is a subnet mask and how does it work?",
+    "category": "Networking",
+    "answer": "A subnet mask divides an IP address into network and host portions, helping routers identify which part of the IP address refers to the network."
+  },
+  {
+    "question": "What does DHCP do in a network?",
+    "category": "Networking",
+    "answer": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses to devices on a network."
+  },
+  {
+    "question": "What is the role of DNS in the internet?",
+    "category": "Networking",
+    "answer": "DNS (Domain Name System) translates domain names into IP addresses, making it easier to access websites without remembering IPs."
+  },
+  {
+    "question": "What is a firewall and how does it enhance security?",
+    "category": "Cybersecurity",
+    "answer": "A firewall filters incoming and outgoing traffic based on security rules, helping prevent unauthorized access to a network."
+  },
+  {
+    "question": "Define encryption and why it's important in communication.",
+    "category": "Cybersecurity",
+    "answer": "Encryption is the process of converting data into a secure format to prevent unauthorized access during transmission."
+  },
+  {
+    "question": "What is a brute-force attack in hacking?",
+    "category": "Hacking",
+    "answer": "A brute-force attack tries all possible combinations of a password or key until the correct one is found."
+  },
+  {
+    "question": "What is the difference between symmetric and asymmetric encryption?",
+    "category": "Cybersecurity",
+    "answer": "Symmetric encryption uses one key to encrypt and decrypt data, while asymmetric encryption uses a public-private key pair."
+  },
+  {
+    "question": "What is an SSL certificate and how does it secure a website?",
+    "category": "Cybersecurity",
+    "answer": "An SSL certificate enables HTTPS and encrypts communication between a browser and a server, ensuring data privacy and authenticity."
+  },
+  {
+    "question": "What command lists all active processes in Linux?",
+    "category": "System Administration",
+    "answer": "The `ps aux` or `top` command lists all active processes."
+  },
+  {
+    "question": "How do you check disk usage in Linux?",
+    "category": "System Administration",
+    "answer": "You can use the `df -h` command to check disk usage in human-readable format."
+  },
+  {
+    "question": "What is the difference between a daemon and a service?",
+    "category": "System Administration",
+    "answer": "A daemon is a background process. A service is a managed application, often controlled using tools like `systemctl` in Linux."
+  },
+  {
+    "question": "What is the purpose of the /etc/passwd file?",
+    "category": "System Administration",
+    "answer": "It stores user account information such as usernames and UID on Unix-like systems."
+  },
+  {
+    "question": "What does the 'chmod' command do in Unix/Linux?",
+    "category": "System Administration",
+    "answer": "`chmod` changes file or directory permissions."
+  },
+  {
+    "question": "What is the OSI model and why is it important?",
+    "category": "Networking",
+    "answer": "The OSI model is a 7-layer framework that describes how data travels through a network, helping standardize communication systems."
+  },
+  {
+    "question": "What is NAT and how is it used in networking?",
+    "category": "Networking",
+    "answer": "NAT (Network Address Translation) allows multiple devices on a private network to share a single public IP address."
+  },
+  {
+    "question": "What is the difference between a public IP and a private IP?",
+    "category": "Networking",
+    "answer": "A public IP is accessible over the internet, while a private IP is used within a local network and not routable on the internet."
+  },
+  {
+    "question": "What does the 'ping' command test?",
+    "category": "Networking",
+    "answer": "`ping` checks if a device is reachable and measures the time it takes for data to travel to it and back."
+  },
+  {
+    "question": "What is a man-in-the-middle attack?",
+    "category": "Cybersecurity",
+    "answer": "It’s an attack where a hacker secretly intercepts and possibly alters communication between two parties."
+  },
+  {
+    "question": "What is the difference between HTTP and HTTPS?",
+    "category": "Cybersecurity",
+    "answer": "HTTPS is the secure version of HTTP. It uses SSL/TLS to encrypt data between the client and server."
+  },
+  {
+    "question": "What is port scanning and why is it used in hacking?",
+    "category": "Hacking",
+    "answer": "Port scanning identifies open ports on a system to find potential entry points for attacks."
+  },
+  {
+    "question": "What is a reverse shell?",
+    "category": "Hacking",
+    "answer": "A reverse shell connects a victim's machine back to the attacker's, allowing remote control."
+  },
+  {
+    "question": "What does 'sudo' mean in Linux?",
+    "category": "System Administration",
+    "answer": "`sudo` allows a permitted user to execute a command as the superuser or another user."
+  },
+  {
+    "question": "What is a shell script?",
+    "category": "System Administration",
+    "answer": "A shell script is a file containing a series of commands to automate tasks in Unix/Linux."
+  },
+  {
+    "question": "What is a loop in programming and why is it useful?",
+    "category": "Coding",
+    "answer": "A loop repeats a block of code until a condition is met, reducing repetition and increasing efficiency."
+  },
+  {
+    "question": "What is a variable in programming?",
+    "category": "Coding",
+    "answer": "A variable stores data that can be used and changed in a program."
+  },
+  {
+    "question": "What is a function and how does it improve code?",
+    "category": "Coding",
+    "answer": "A function is a reusable block of code that performs a specific task, making code cleaner and modular."
+  },
+  {
+    "question": "What is version control and why do developers use Git?",
+    "category": "Coding",
+    "answer": "Version control tracks changes in code, allowing collaboration and rollback. Git is a popular tool for it."
+  },
+  {
+    "question": "What is a bug and what is debugging?",
+    "category": "Coding",
+    "answer": "A bug is an error in a program. Debugging is the process of finding and fixing those errors."
+  }
+]
