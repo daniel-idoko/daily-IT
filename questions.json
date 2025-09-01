@@ -148,5 +148,55 @@
     "question": "What is a bug and what is debugging?",
     "category": "Coding",
     "answer": "A bug is an error in a program. Debugging is the process of finding and fixing those errors."
+  },
+  {
+    "question": "What is a DNS and how does it work?",
+    "category": "Networking",
+    "answer": "DNS (Domain Name System) is like the internet’s phonebook. It translates human-readable domain names (e.g., google.com) into IP addresses (142.250.190.78) so browsers can load websites. When you type a URL, your computer queries a DNS server, which returns the correct IP address for the requested site."
+  },
+  {
+    "question": "What’s the difference between TCP and UDP?",
+    "category": "Networking",
+    "answer": "UDP (User Datagram Protocol) is connectionless, faster but unreliable, often used for real-time applications like VoIP and online gaming. TCP (Transmission Control Protocol) is connection-oriented, ensuring reliable, ordered, and error-checked data transmission (e.g., HTTP, FTP)."
+  },
+  {
+    "question": "What is a load balancer and why is it important?",
+    "category": "Networking",
+    "answer": "A load balancer distributes incoming network traffic across multiple servers to prevent overload, improve performance, and ensure high availability. It can operate at Layer 4 (transport level) or Layer 7 (application level) and is used in high-traffic web applications."
+  },
+  {
+    "question": "What is SSH and how does it work?",
+    "category": "Networking",
+    "answer": "SSH (Secure Shell) is a protocol that allows secure remote access to servers over an encrypted connection. It uses public-key cryptography for authentication and operates on port 22 by default."
+  },
+  {
+    "question": "What’s the difference between virtualization and containerization?",
+    "category": "Networking",
+    "answer": "Virtualization (e.g., using VMs like VirtualBox) runs an entire OS on a hypervisor, with each VM having its own kernel and resources. Containerization (e.g., Docker) runs lightweight, isolated applications using the host OS kernel, making it more efficient and faster than VMs."
+  },
+  {
+    "question": "What is an IP address, and what are the different types?",
+    "category": "Networking",
+    "answer": "An IP (Internet Protocol) address is a unique identifier assigned to a device on a network. There are two types: IPv4 (e.g., 192.168.1.1) – 32-bit address, supports ~4.3 billion devices. IPv6 (e.g., 2001:db8::ff00:42:8329) – 128-bit address, supports a vast number of devices. They can also be public (internet-facing) or private (used within local networks)."
+  },
+  {
+    "question": "What is the difference between symmetric and asymmetric encryption?",
+    "category": "Networking",
+    "answer": "- **Symmetric encryption** uses the same key for encryption and decryption (e.g., AES). It’s fast but requires secure key distribution. Asymmetric encryption uses a public key for encryption and a private key for decryption (e.g., RSA). It’s more secure for communication but slower."
+  },
+  {
+    "question": "What is a subnet mask, and why is it important?",
+    "category": "Networking",
+    "answer": "A subnet mask (e.g., 255.255.255.0) defines which part of an IP address belongs to the network and which part identifies the host. It helps in segmenting networks and optimizing IP address usage."
+  },
+  {
+    "question": "What is RAID, and what are some common RAID levels?",
+    "category": "Networking",
+    "answer": "RAID (Redundant Array of Independent Disks) is a storage technology that improves performance and/or redundancy. Common levels: RAID 0 (Striping): No redundancy, faster speed. RAID 1 (Mirroring): Data is duplicated for fault tolerance. RAID 5 (Striping with Parity): Balances redundancy and performance. RAID 10 (1+0): Combines mirroring and striping for high speed & redundancy."
+  },
+  {
+    "question": "What is the difference between a firewall and an intrusion detection system (IDS)?",
+    "category": "Networking",
+    "answer": "Firewall: Monitors and controls incoming/outgoing traffic based on security rules. It acts as a gatekeeper. IDS: Monitors network traffic for suspicious activity and alerts administrators but doesn’t block traffic."
   }
 ]
