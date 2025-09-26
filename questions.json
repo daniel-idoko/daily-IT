@@ -13,5 +13,53 @@
     "question": "Which secure cookie flags should you set and why?",
     "category": "Security",
     "answer": "<p>To secure cookies, the following flags should be set:</p><ul><li><strong>HttpOnly:</strong> Prevents JavaScript from accessing cookies, reducing XSS risk.</li><li><strong>Secure:</strong> Ensures cookies are only sent over HTTPS, protecting against interception.</li><li><strong>SameSite:</strong> Controls cross-site cookie sharing. Use <em>Strict</em> for maximum security, <em>Lax</em> for balance, or <em>None</em> only when necessary with Secure.</li></ul>"
+  },
+
+
+
+  {
+    "question": "Describe SQL injection conceptually and the root cause. How do you fix it in code?",
+    "category": "Security",
+    "answer": "<p><strong>SQL Injection</strong> occurs when untrusted input is concatenated into SQL queries, allowing attackers to manipulate the database (e.g., bypass authentication or extract data).</p><p><strong>Root cause:</strong> Unsafe string concatenation and lack of input handling.</p><p><strong>Fix:</strong> Always use <strong>parameterized queries</strong> (prepared statements) or safe <strong>ORM methods</strong> instead of building queries with user input directly.</p>"
+  },
+  {
+    "question": "What is clickjacking and how do you mitigate it?",
+    "category": "Security",
+    "answer": "<p><strong>Clickjacking</strong> is an attack where a malicious site embeds your site in a hidden or transparent frame, tricking users into clicking actions without realizing it (e.g., liking a page, transferring money).</p><p><strong>Mitigation:</strong> Use the <code>X-Frame-Options</code> header (<em>Deny</em> or <em>SAMEORIGIN</em>) or a <strong>Content Security Policy (CSP)</strong> with <code>frame-ancestors</code> to prevent your site from being embedded in iframes.</p>"
+  },
+  {
+    "question": "Explain CORS and the risks of overly permissive policies.",
+    "category": "Security",
+    "answer": "<p><strong>CORS (Cross-Origin Resource Sharing)</strong> is a browser mechanism that controls which external origins can make requests to your web application.</p><p><strong>Risk of overly permissive policies:</strong> If you allow <code>*</code> or all origins, any malicious site can read sensitive API responses on behalf of an authenticated user, leading to data leaks.</p><p><strong>Mitigation:</strong> Restrict <code>Access-Control-Allow-Origin</code> to trusted domains only, and avoid using <code>*</code> with credentials.</p>"
+  },
+
+
+
+  {
+    "question": "You find a feature that lets users set arbitrary email addresses for alerts. What business logic issues could arise and how would you test them conceptually?",
+    "category": "Security",
+    "answer": "<p>If users can set <strong>arbitrary email addresses</strong> for alerts, several business logic issues may occur:</p><ul><li><strong>Email flooding:</strong> Attackers could target third parties with spam.</li><li><strong>Information disclosure:</strong> Sensitive alerts may go to an attacker’s email.</li><li><strong>Phishing vectors:</strong> Alerts may be redirected to malicious addresses.</li></ul><p><strong>Conceptual testing:</strong> Try setting emails you don’t own, disposable addresses, attacker-controlled addresses, or very large numbers of emails to see how the system handles it.</p>"
+  },
+  {
+    "question": "Threat model for a single-page banking app: list at least five assets and five threats.",
+    "category": "Security",
+    "answer": "<p><strong>Assets:</strong></p><ul><li>User credentials</li><li>Account balances and transaction history</li><li>Payment instructions</li><li>Personal identifiable information (PII)</li><li>Session tokens / authentication cookies</li></ul><p><strong>Threats:</strong></p><ul><li>Credential theft via phishing or keylogging</li><li>Cross-Site Scripting (XSS) stealing sessions</li><li>Cross-Site Request Forgery (CSRF) transferring funds</li><li>Man-in-the-Middle (MITM) intercepting transactions</li><li>Privilege escalation to gain admin access</li></ul>"
+  },
+  {
+    "question": "How do you prioritize vulnerabilities? Outline criteria.",
+    "category": "Security",
+    "answer": "<p>Vulnerability prioritization is based on multiple factors:</p><ul><li><strong>Impact:</strong> What damage could occur if exploited? (data loss, fraud, downtime)</li><li><strong>Exploitability:</strong> How easy is it to exploit (automated tools, skill required)?</li><li><strong>Exposure:</strong> Is the vulnerable component internet-facing, internal, or restricted?</li><li><strong>Business context:</strong> Does it affect critical assets like payment systems or sensitive customer data?</li></ul><p>By combining these criteria, you can rank vulnerabilities as high, medium, or low priority for remediation.</p>"
+  },
+
+
+  {
+    "question": "What is a good bug report structure?",
+    "category": "Security",
+    "answer": "<p>A good bug report is clear, reproducible, and useful for developers and security teams. It should include:</p><ul><li><strong>Summary:</strong> Short description of the issue.</li><li><strong>Impact:</strong> Why it matters (data leak, account takeover, etc.).</li><li><strong>Steps to reproduce:</strong> Exact actions to trigger the bug.</li><li><strong>Proof of Concept (safe):</strong> Demonstration without harming production data.</li><li><strong>Remediation:</strong> Suggested fix or security control.</li><li><strong>Severity:</strong> Risk rating (low/medium/high/critical).</li><li><strong>Environment:</strong> Context like browser, OS, version.</li></ul>"
+  },
+  {
+    "question": "Name five important security headers and what they do.",
+    "category": "Security",
+    "answer": "<p>Five key security headers and their purpose:</p><ul><li><strong>Content-Security-Policy (CSP):</strong> Restricts sources of scripts, styles, and content to mitigate XSS.</li><li><strong>X-Frame-Options / frame-ancestors:</strong> Prevents clickjacking by controlling which sites can embed your app in iframes.</li><li><strong>X-Content-Type-Options:</strong> Stops MIME type sniffing; enforces declared content type.</li><li><strong>Referrer-Policy:</strong> Controls how much referrer information is shared across sites.</li><li><strong>Strict-Transport-Security (HSTS):</strong> Forces HTTPS for all requests, preventing downgrade and MITM attacks.</li></ul>"
   }
 ]
