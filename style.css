@@ -100,17 +100,18 @@ h1 {
 .answer {
   opacity: 0;
   max-height: 0;
-  overflow: hidden;
   transition: opacity 0.3s ease, max-height 0.3s ease;
   font-style: normal;
   background-color: #1b5e20;
   padding: 0 0.5rem;
   border-radius: 0.5rem;
   margin-top: 0.5rem;
+  overflow-y: hidden; /* keep it hidden when collapsed */
 }
 
 .answer.show {
   opacity: 1;
   max-height: 200px;
   padding: 0.5rem;
+  overflow-y: auto; /* scroll if content is taller */
 }
