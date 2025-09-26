@@ -1,4 +1,4 @@
-const questionsPerDay = 5;
+const questionsPerDay = 3;
 const daysList = document.getElementById('days-list');
 
 fetch('questions.json')
