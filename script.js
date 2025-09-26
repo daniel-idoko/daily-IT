@@ -1,7 +1,7 @@
 let questions = [];
 const urlParams = new URLSearchParams(window.location.search);
 let day = parseInt(urlParams.get('day')) || 0;
-const questionsPerDay = 5;
+const questionsPerDay = 3;
 
 const container = document.getElementById('questions-container');
 const dayLabel = document.getElementById('day-label');
